@@ -15,7 +15,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 // Next component
 import Link from 'next/link';
 // React component
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
+// components
+import DrawerNav from '../../../05-navigation/drawer/DrawerNav';
 
 const NavBar = () => {
 
@@ -33,14 +35,20 @@ const NavBar = () => {
       name: 'nosotros',
       href: '/nosotros',
     }, {
-      name: 'disponiblees',
+      name: 'disponibles',
       href: '/disponibles',
+    }, {
+      name: 'alimento',
+      href: '/alimento',
+    }, {
+      name: 'accesorios',
+      href: '/accesorios',
     }
   ]
 
   return (
 
-    <AppBar>
+    <AppBar sx={{ display: 'flex', justifyContent: 'center', height: '6vh' }}>
 
       <Toolbar>
 
@@ -49,6 +57,8 @@ const NavBar = () => {
           <Fragment>
 
             <Typography>is match</Typography>
+
+            <DrawerNav />
           </Fragment>
         ) : (
 

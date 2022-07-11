@@ -3,13 +3,18 @@ import { createTheme, ThemeProvider } from '@mui/material';
 // MUI colors
 import {
   red,
-  } from '@mui/material/colors'
+  amber,
+  grey,
+  green,
+  cyan,
+  } from '@mui/material/colors';
 // Next component
 import Head from 'next/head';
 // React component
 import { Fragment } from 'react';
 // components
 import NavBar from '../../04-surfaces/user/appbar/NavBar'
+import SpeedDialBtn from '../../05-navigation/speed-dial/SpeedDialBtn'
 
 const userTheme = createTheme( {
 
@@ -22,7 +27,35 @@ const userTheme = createTheme( {
 
     secondary: {
 
-      main: red[500],
+      main: amber[700],
+    },
+
+    surface: {
+
+      primary: grey[900],
+      secondary: grey[800],
+      
+    },
+
+    buttons: {
+
+      primary: {
+        main: green[500],
+        hover: green[700]
+      },
+
+      secondary: {
+        main: cyan[500],
+        hover: cyan[700]
+      }
+    },
+
+    components: {
+
+      card: {
+        menu: grey[800],
+        main: grey[900],
+      }
     },
   }
 });
@@ -41,8 +74,21 @@ const Layout = ( { children, title, description}) => {
           <meta name='viewport' content='initial-scale=1, width=device-width' />
           <meta name='description' content={ description} />
         </Head>
+
+
+  {/* Navbar component ____________________ */}
         <NavBar />
+        <br />
+        <br />
+        <br />
+
+
+  {/* Children layout component ____________________ */}
         { children}
+
+  {/* SpeedDial component ____________________ */}
+
+        <SpeedDialBtn />
       </Fragment>
     </ThemeProvider>
   )
