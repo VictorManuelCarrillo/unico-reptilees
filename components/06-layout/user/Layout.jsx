@@ -13,8 +13,9 @@ import Head from 'next/head';
 // React component
 import { Fragment } from 'react';
 // components
-import NavBar from '../../04-surfaces/user/appbar/NavBar'
-import SpeedDialBtn from '../../05-navigation/speed-dial/SpeedDialBtn'
+import NavBar from '../../04-surfaces/user/appbar/NavBar';
+import StackSocial from '../stack/StackSocial';
+import SpeedDialBtn from '../../05-navigation/speed-dial/SpeedDialBtn';
 
 const userTheme = createTheme( {
 
@@ -90,6 +91,9 @@ const Layout = ( { children, title, description}) => {
 
   {/* Children layout component ____________________ */}
         { children}
+
+  {/* Stack component ____________________ */}
+        <StackSocial />
 
   {/* SpeedDial component ____________________ */}
 

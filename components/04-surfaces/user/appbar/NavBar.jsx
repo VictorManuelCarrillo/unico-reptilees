@@ -32,14 +32,14 @@ const NavBar = () => {
       name: 'inicio',
       href: '/',
     }, {
+      name: 'tienda',
+      href: '/tienda',
+    }, {
+      name: 'fichas de cuidado',
+      href: '/fichas-de-cuidado',
+    }, {
       name: 'nosotros',
       href: '/nosotros',
-    }, {
-      name: 'disponibles',
-      href: '/disponibles',
-    }, {
-      name: 'alimento',
-      href: '/alimento',
     }, {
       name: 'accesorios',
       href: '/accesorios',
