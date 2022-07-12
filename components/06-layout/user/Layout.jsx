@@ -31,6 +31,15 @@ const userTheme = createTheme( {
       main: amber[700],
     },
 
+    text: {
+
+      primary: grey[50],
+      secondary: grey[100],
+      disabled: grey[200],
+    },
+
+    divider: grey[50],
+
     surface: {
 
       primary: grey[900],
@@ -86,7 +95,6 @@ const Layout = ( { children, title, description}) => {
         <NavBar />
         <br />
         <br />
-        <br />
 
 
   {/* Children layout component ____________________ */}
@@ -108,5 +116,5 @@ export default Layout;
 Layout.defaultProps = {
 
   title: 'Venta legal de especies exóticas en México',
-  description: 'Somos una empresa dedicada a la venta legal de especies exóticas en todo México, conócenos y sal de la rutina. Sé diferente, sé original. Séúnico reptiles',
+  description: 'Somos una empresa dedicada a la venta legal de especies exóticas en todo México, conócenos y sal de la rutina. Sé diferente, sé original. Sé único reptiles',
 }
