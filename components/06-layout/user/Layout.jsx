@@ -34,7 +34,8 @@ const userTheme = createTheme( {
 
       primary: grey[900],
       secondary: grey[800],
-      
+      tertiary: grey[700],
+      quartet: grey[600],
     },
 
     buttons: {
@@ -47,6 +48,10 @@ const userTheme = createTheme( {
       secondary: {
         main: cyan[500],
         hover: cyan[700]
+      },
+
+      link: {
+        main: cyan[500]
       }
     },
 
